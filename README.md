@@ -3,6 +3,8 @@ Error reporting in AWS (via email, Slack, Telegram...) using AWS Lambda.
 
 If you subscribe this AWS Lambda to AWS CloudWatch Logs, it's able to notify log messages by email, telegram and Slack.
 
+This Lambda function code can be used to alert you to errors in your Alexa skill but also to detect errors in other Lambda functions, in EC2 instances or other AWS services.
+
 ![AWS Architecture](/images/aws-error-log-notifications.png)
 
 To reduce the number of messages, optimize cost and make it more useful, please apply a filter pattern in the CloudWatch Subscription. In the following example, log messages are filtered with the string "error", but you can be more specific:
